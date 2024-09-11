@@ -1,0 +1,22 @@
+- donate container pop up to handle:
+close button : XPATH {/html/body/getsitecontrol-widget//div/div/div/button}
+
+we will get all the avialable charities directory with the starting letter, in total will be a 29 url list, 28 alphabits and one for charities starting with a number,
+
+we have now a list of 29 url, 
+
+
+-
+ html table to scrape: 
+ 
+XPATH : /html/body/main/div/div/div/div/div/div[3]/div/div/div/div/table[2]/tbody/tr[1]/td/span/a
+        /html/body/main/div/div/div/div/div/div[3]/div/div/div/div/table[2]/tbody/tr[2]/td/span/a
+        /html/body/main/div/div/div/div/div/div[3]/div/div/div/div/table[2]/tbody/tr[3]/td/span/a
+        ...
+	/html/body/main/div/div/div/div/div/div[3]/div/div/div/div/table[2]/tbody/tr[241]/td/span/a
+	
+using these locators, we will get the elements url and name of charity.
+
+then we store everything in a list, list name charity-url-with-a
+then we move to the second letter, b
+
